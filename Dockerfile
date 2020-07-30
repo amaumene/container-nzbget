@@ -15,7 +15,7 @@ RUN \
 	unrar \
 	unzip \
 	curl \
-	nzbget &&
+	nzbget && \
  echo "**** configure nzbget ****" && \
  cp /app/nzbget/nzbget.conf /defaults/nzbget.conf && \
  sed -i \
