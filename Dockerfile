@@ -17,7 +17,7 @@ RUN \
 	curl \
 	nzbget && \
  echo "**** configure nzbget ****" && \
- cp /app/nzbget/nzbget.conf /defaults/nzbget.conf && \
+ cp /usr/share/nzbget/nzbget.conf /defaults/nzbget.conf && \
  sed -i \
 	-e "s#\(MainDir=\).*#\1/downloads#g" \
 	-e "s#\(ScriptDir=\).*#\1$\{MainDir\}/scripts#g" \

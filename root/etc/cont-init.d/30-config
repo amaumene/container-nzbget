@@ -12,7 +12,6 @@
 chown abc:abc \
 	/downloads
 chown abc:abc -R \
-	/app/nzbget \
-	/config
+	/config \
 chmod u+rw \
 	/config/nzbget.conf
