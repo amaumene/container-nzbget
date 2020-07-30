@@ -17,11 +17,9 @@ RUN \
 	curl \
 	p7zip \
 	python2 \
-	py2-pip \
 	unrar \
 	unzip \
 	wget && \
- pip install guessit && \
  echo "**** install nzbget ****" && \
  mkdir -p \
 	/app/nzbget && \
