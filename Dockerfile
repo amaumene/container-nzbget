@@ -16,8 +16,6 @@ RUN \
 	unzip \
 	curl \
 	nzbget && \
- echo "**** configure nzbget ****" && \
- cp /usr/share/nzbget/nzbget.conf /defaults/nzbget.conf && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
