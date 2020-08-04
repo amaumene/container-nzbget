@@ -6,10 +6,10 @@
 
 # check if config file exists in /config
 [[ ! -f /config/nzbget.conf ]] && \
-	cp /defaults/nzbget.conf /config/nzbget.conf
+	cp /usr/share/nzbget/nzbget.conf /config/nzbget.conf
 
 # permissions
-chown abc:abc \
+chown abc:abc -R \
 	/downloads
 chown abc:abc -R \
 	/config \
