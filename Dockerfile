@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:edge
+FROM alpine:edge
 
 # set version label
 ARG BUILD_DATE
@@ -18,12 +18,6 @@ RUN \
 	nzbget && \
  echo "**** configure nzbget ****" && \
  cp /usr/share/nzbget/nzbget.conf /defaults/nzbget.conf && \
- sed -i \
-	-e "s#\(MainDir=\).*#\1/downloads#g" \
-	-e "s#\(ScriptDir=\).*#\1$\{MainDir\}/scripts#g" \
-	-e "s#\(WebDir=\).*#\1$\{AppDir\}/webui#g" \
-	-e "s#\(ConfigTemplate=\).*#\1$\{AppDir\}/webui/nzbget.conf.template#g" \
- /defaults/nzbget.conf && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
