@@ -9,7 +9,7 @@
 	cp /usr/share/nzbget/nzbget.conf /config/nzbget.conf
 
 # permissions
-chown abc:abc -R \
+chown abc:abc \
 	/downloads
 chown abc:abc -R \
 	/config \
