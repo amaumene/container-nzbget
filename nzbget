@@ -6,4 +6,4 @@
 [[ ! -f /config/nzbget.conf ]] && \
 	cp /usr/share/nzbget/nzbget.conf /config/nzbget.conf
 
-/usr/bin/nzbget -s -c /config/nzbget.conf
+/usr/bin/nzbget -s -c /config/nzbget.conf -o outputmode=log
