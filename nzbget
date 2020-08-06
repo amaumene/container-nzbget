@@ -1,0 +1,9 @@
+#!/bin/sh
+
+[[ -f /downloads/nzbget.lock ]] && \
+	rm /downloads/nzbget.lock
+
+[[ ! -f /config/nzbget.conf ]] && \
+	cp /usr/share/nzbget/nzbget.conf /config/nzbget.conf
+
+/usr/bin/nzbget -s -c /config/nzbget.conf

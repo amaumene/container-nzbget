@@ -21,8 +21,9 @@ RUN \
 	/tmp/*
 
 # add local files
-COPY root/ /
+COPY nzbget /nzbget
 
 # ports and volumes
 VOLUME /config /downloads
 EXPOSE 6789
+ENTRYPOINT /nzbget
