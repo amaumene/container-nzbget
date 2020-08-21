@@ -15,7 +15,9 @@ RUN \
 	unrar \
 	unzip \
 	curl \
+	py3-pip \
 	nzbget && \
+ pip3 install requests requests_toolbelt && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
