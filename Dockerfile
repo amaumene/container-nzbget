@@ -11,13 +11,12 @@ RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
 	p7zip \
-	python2 \
 	unrar \
 	unzip \
 	curl \
 	py3-pip \
 	nzbget && \
- pip3 install requests requests_toolbelt && \
+ pip3 install babelfish python-dateutil guessit rebulk requests requests_toolbelt && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
